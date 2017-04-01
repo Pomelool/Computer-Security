@@ -1,0 +1,1 @@
+Cookie is sent through HTTP, which means someone can spy on your network packets, grab the Cookie, and use it to login to your facebook and do whatever he wants.

@@ -1,0 +1,1 @@
+Facebook now instruct browser to send cookie or other sensitive information thorugh HTTPS. Also, what user can do is to use HTTPS as much as possible, for example, user can use a plugin called HTTPS Everywhere to force all HTTPS connection on browser.

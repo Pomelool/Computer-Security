@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1 onclick=myfoo()>CS461</h1>
+            <form action="http://permalink.co/get_exercise/" method="get" id ="getexec">
+                <input type="text" name="netid">
+                    <input type="text" name="val_get">
+                        <input type="submit">
+                            </form>
+            <form action="http://permalink.co/post_exercise/" method="post" id ="login_info">
+                netid: <input type="text" name="netid"><br>
+                    val_get: <input type="text" name="val_post"><br>
+                        <input type="submit">
+                            </form>
+            <script>
+                function myfoo() {
+                    var h1Elements = document.getElementsByTagName("h1");
+                    
+                    for(var i = 0; i < h1Elements.length; i++) {
+                        h1Elements[i].style.color = "white";
+                    }
+                }
+            
+            </script>
+            </body>
+</html>

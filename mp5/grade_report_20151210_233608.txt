@@ -1,0 +1,64 @@
+szhou42 total : 75.0/110
+Testing 5.2.1 Operating Systems	5.0/10	
+puppy passed
+431 passed
+ubuntu passed
+1404 passed
+
+
+Testing 5.2.2 Username	5.0/5	
+username passed
+
+
+Testing 5.2.3 Conversation	5.0/15	
+ladiesman461 passed
+ladiesman461 passed
+
+
+Testing 5.2.4 Search History	9.5/15	
+link 0 passed
+link 1 not in order, partially passed
+link 2 passed
+link 3 passed
+link 4 passed
+weapon passed
+
+
+Testing 5.2.5 Encrypted File	10.0/10	
+password passed
+decrypted file passed
+
+
+Testing 5.2.6 Attack	15.0/20	
+ladiesman461 passed
+nmap passed
+hydra passed
+10.46.1.106 passed
+10.2.2.112 failed
+yes passed
+known_hosts failed
+ssh_host_ecdsa_key failed
+password passed
+
+
+Testing 5.2.7 File Extraction	10.0/10	
+filename passed
+deleted file passed
+
+
+Testing 5.2.8 Escape Plan	10.5/15	
+accomplice passed
+location passed
+location failed
+original time failed
+actual time passed
+
+
+Testing 5.2.9 File Metadata	5.0/5	
+metadata passed
+
+
+Testing 5.2.10 Final Decision	0.0/5	
+decision failed
+
+

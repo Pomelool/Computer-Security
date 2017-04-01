@@ -1,0 +1,4 @@
+Grade: 16
+mp5/5.2.1_behavior.txt: 3
+mp5/5.2.3_relationship.txt: 10
+mp5/5.2.4_method.txt: 3

@@ -1,0 +1,12 @@
+generate a hash of the password so that the hash contains attack query
+[optional, can be anything BUT single quote]'[must be one or multiple spaces]or[must be one or multiple spaces]1=1#
+
+but this is going to take forever
+
+anything'||'anynumber
+anything'or'anynumber
+anything'OR'anynumber
+anything'oR'anynumber
+anything'Or'anynumber
+
+these are good

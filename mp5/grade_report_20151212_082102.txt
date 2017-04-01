@@ -1,0 +1,19 @@
+szhou42 total : 28.5/35
+Testing 5.2.5 Encrypted File	10.0/10	
+password passed
+decrypted file passed
+
+
+Testing 5.2.7 File Extraction	10.0/10	
+filename passed
+deleted file passed
+
+
+Testing 5.2.8 Escape Plan	8.5/15	
+accomplice passed
+location passed
+location failed
+original time passed
+actual time failed
+
+

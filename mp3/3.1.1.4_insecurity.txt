@@ -1,0 +1,1 @@
+Only the login is done through HTTPS, many other operations are done through HTTP. Also, when user is doing other operations, facebook will reauthenticate thorugh cookie.

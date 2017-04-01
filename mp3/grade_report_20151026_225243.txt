@@ -1,0 +1,38 @@
+szhou42 total : 97.5/100
+Testing 3.2.1.1 WEP key	10.0/10	
+wep key passed
+
+
+Testing 3.2.1.2 IP address	10.0/10	
+server ip passed
+client ip passed
+
+
+Testing 3.2.1.2 Protocols	7.5/10	
+ftp passed
+http passed - ignored
+dhcps failed
+ntp failed - ignored
+ssh passed
+https passed
+
+
+Testing 3.2.1.3 Credentials and Secret	30.0/30	Credentials and Secret combined score
+20 credentials passed
+10 secret passed
+
+
+Testing 3.2.1.3 Years	5.0/5	
+years passed
+
+
+Testing 3.2.2	35.0/35	
+1.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+2.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+3.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+4.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+5.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+6.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+7.pcap  FALSE_POSITIVE: 0 FALSE_NEGATIVE: 0
+
+

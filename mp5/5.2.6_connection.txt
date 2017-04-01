@@ -1,0 +1,3 @@
+yes
+known_hosts
+ssh_host_ecdsa_key

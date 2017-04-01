@@ -1,0 +1,58 @@
+szhou42 total : 20/35
+Testing python_exercise	5/5	
+
+1.1.2_decimal *Passed*
+
+1.1.2_binary *Passed*
+
+
+Testing substitution_cipher	0/5	
+
+*Failed*
+
+student's submission : PXNGOUOXNXEVSWXSQSPUWOPAQWSKOKUANPSOUXPPBWKONYSUAQKPXXQSGUXDSWZQXCUSYJSWAUBWSK
+expected plaintext   : CONDITIONOFZEROELECTRICALRESISTANCEITOCCURSINMETALSCOOLEDTOVERYLOWTEMPERATURES
+
+
+Testing decrypt_aes	5/5	
+
+*Passed*
+
+student's submission : HETELLSDANTETHATINSTEADOFSTAYINGHOMEWITHPENELOPEHEWENTOFFTOSEAAGAINGLUBGLUB
+expected plaintext   : HETELLSDANTETHATINSTEADOFSTAYINGHOMEWITHPENELOPEHEWENTOFFTOSEAAGAINGLUBGLUB
+
+
+Testing weak_aes	5/5	
+
+*Passed*
+
+student's submission : 0000000000000000000000000000000000000000000000000000000000000018
+correct aes key      : 0000000000000000000000000000000000000000000000000000000000000018
+
+
+Testing decrypt_rsa	0/5	
+
+*Failed*
+
+student's submission : 7399891
+expected plaintext   : 462493
+
+
+Testing avalanche_effect	0/5	
+
+*Failed*
+
+Expected answer      : 130
+Student's submission : 129
+
+
+Testing weak_hashing_algorithm	5/5	
+
+*Passed*
+
+Given Plaintext: IN THE 1800S SO MANY MEN USED MACASSAR OIL IN THEIR HAIR THAT SOFA COVERS CALLED THESE WERE DEVELOPED
+Expected hash  : 1070965766
+Student's text : NI THE 1800S SO MANY MEN USED MACASSAR OIL IN THEIR HAIR THAT SOFA COVERS CALLED THESE WERE DEVELOPED
+Student's hash : 1070965766
+
+

@@ -1,0 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+goodstr = "I come in peace."
+evilstr = "Prepare to be destroyed!"
+"""

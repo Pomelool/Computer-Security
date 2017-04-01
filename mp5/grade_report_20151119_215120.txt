@@ -1,0 +1,24 @@
+szhou42 total : 14.0/20
+Testing 5.1.1 Username	2.0/2	
+username passed
+
+
+Testing 5.1.2 Conversation	2.0/4	
+wh1t3r0s3 failed
+alice.innocuous passed
+alice.innocuous passed
+wh1t3r0s3 failed
+
+
+Testing 5.1.3 Evidence file	2.0/4	
+file name passed
+file time failed
+
+
+Testing 5.1.4 Evidence file	8.0/10	
+file time passed
+10.46.1.105 passed
+10.46.1.106 passed
+victim ip failed
+
+

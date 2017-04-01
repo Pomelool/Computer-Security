@@ -1,0 +1,5 @@
+Based on the error message “THEFT DETECTED…” I see when trying to boot the VM, security system is enabled for normal boot. 
+
+The security system will destroy the hard disk drive. We know that because on second boot of the same vdi file, the os will tell us no bootable medium is found, system halted.
+
+To circumvent this, I press esc to enable recover mode.

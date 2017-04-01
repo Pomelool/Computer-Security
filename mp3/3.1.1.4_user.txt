@@ -1,0 +1,7 @@
+User visits the homepage of facebook.
+User searches the string "zakir durum"
+User open the profile of a user whose id is zakirbpd(his name is Zakir Durum)
+User open the message composer
+User upload an attachment
+User takes a loot at notifications
+User send the message to zakirbpd

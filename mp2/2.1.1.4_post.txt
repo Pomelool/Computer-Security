@@ -1,0 +1,4 @@
+Below are two {name: value} parameter pairs for a POST request form.
+
+{netid: szhou42}
+{val_post: 60d89cf0914f886901b7ee81fec936a753f90aaa2ae370af40a940620e988988}
